@@ -1,4 +1,4 @@
-#Create Classes
+#Create Classes/Сыныптар құру:
 class Car:
     def __init__(self, name, model, power, price):
         self.name = name
@@ -12,14 +12,14 @@ class CarShowRoom:
         self.cars = []
 
 
-    #Add Function
+    #Add Function/Функция қосу:
     def add(self, name, model, power, price):
         car = Car(name, price, model, power)
         self.cars.append(car)
         print(f"{name} 𝗗𝗢𝗡𝗘 ✔")
 
 
-    #Update Function
+    #Update Function/Жаңарту функциясы:
     def Update(self , index, name=None, price=None, model=None, power=None):
         car = self.cars[index - 1]
         if name:
@@ -33,13 +33,13 @@ class CarShowRoom:
         print(f"{car.name} ~𝐔𝐃𝐀𝐓𝐄𝐃~ ")
 
 
-    #Delete Funcrion
+    #Delete Funcrion/Функцияны Жою:
     def delete(self, index):
         car = self.cars.pop(index - 1)
         print(f"{car.name} 𝑹𝑬𝑴𝑶𝑽𝑬𝑫 ")
 
 
-    #Create Menu
+    #Create Menu/Мәзір жасау:
 
 showroom = CarShowRoom()
 while True:
