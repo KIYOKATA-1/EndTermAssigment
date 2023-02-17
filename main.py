@@ -10,3 +10,15 @@ class Car:
 class CarShowRoom:
     def __init__(self):
         self.cars = []
+
+
+
+
+
+    #Add Function
+    def add(self, name, model, power, price):
+        car = Car(name, price, model, power)
+        self.cars.append(car)
+        print(f"{name} Added")
+
+
