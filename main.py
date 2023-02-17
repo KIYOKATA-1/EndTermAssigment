@@ -34,3 +34,8 @@ class CarShowRoom:
         if price:
             car.price = price
         print(f"{car.name} ~𝐔𝐃𝐀𝐓𝐄𝐃~ ")
+
+    #Delete Funcrion
+    def delete(self, index):
+        car = self.cars.pop(index - 1)
+        print(f"{car.name} 𝑹𝑬𝑴𝑶𝑽𝑬𝑫 ")
